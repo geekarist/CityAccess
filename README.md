@@ -1,7 +1,14 @@
-# public-transit-to
+# EasyAccess
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.11.1.
+## Features
+
+- Choose an start address, some destination addresses, and when clicking a destination, display the route using public transportation.
+- Display the route in a frame
+
+## Planned features
+
+- Automatically resize the Directions frame to fit to its content
+- Add/remove destinations
 
 ## Build & development
 
