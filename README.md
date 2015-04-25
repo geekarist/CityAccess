@@ -7,7 +7,7 @@
 
 ## Planned features
 
-- Automatically resize the Directions frame to fit to its content
+- Automatically resize the Directions frame to fit to its content. See http://stackoverflow.com/a/25880845.
 - Add/remove destinations
 
 ## Build & development
