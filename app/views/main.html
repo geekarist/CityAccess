@@ -1,0 +1,26 @@
+<form ng-submit="showDestinations()">
+    <div class="input-group">
+        <input type="text" class="form-control" name="start" ng-model="start" placeholder="Start">
+        <span class="input-group-btn">
+            <button type="submit" class="btn btn-default">Show Directions</button>
+        </span>
+    </div>
+</form>
+
+<div class="row" ng-show="allEnds">
+    <div>
+        <ul class="nav nav-pills">
+            <li role="presentation" ng-repeat="end in allEnds" ng-class="{active: end.url === selectedUrl}">
+                <a ng-click="showDirections(end.url)">{{end.address}}</a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <iframe style="width: 100%; height: 600px" ng-src="{{trustedUrl(selectedUrl)}}">
+        </iframe>
+    </div>
+</div>
+
+<div ng-hide="allEnds">
+    Sorry, no end addresses defined.
+</div>
